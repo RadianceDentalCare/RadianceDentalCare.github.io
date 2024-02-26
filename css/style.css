@@ -5,7 +5,29 @@
     --light: #EEF9FF;
     --dark: #091E3E;
 }
+.iframe-wrapper {
+    position: relative;
+    height: 300px; 
+}
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Change the cursor to indicate clickable area */
+    background: transparent; /* Keep the overlay invisible */
+}
+
+body > div.container-fluid.text-light.py-4 > div > div > div.col-md-6.text-center.text-md-end > p {
+    display: none;
+}
 h1,
 h2,
 .font-weight-bold {
@@ -166,7 +188,7 @@ h6,
 }
 
 .section-title h5::before {
-    position: absolute;
+    /* position: absolute; */
     content: "";
     width: 45px;
     height: 3px;
@@ -176,7 +198,7 @@ h6,
 }
 
 .section-title h5::after {
-    position: absolute;
+    /* position: absolute; */
     content: "";
     width: 15px;
     height: 3px;
